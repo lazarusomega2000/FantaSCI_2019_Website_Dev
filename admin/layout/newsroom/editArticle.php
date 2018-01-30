@@ -10,7 +10,7 @@
         <?php if ( isset( $results['errorMessage'] ) ) { ?>
             <div class="errorMessage"><?php echo $results['errorMessage'] ?></div>
         <?php } ?>
-
+        
         <div class="form-group">
             <label class="font-weight-bold" for="title">Title</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Name of the article" required maxlength="255" value="<?php echo htmlspecialchars( $results['article']->title )?>" />
